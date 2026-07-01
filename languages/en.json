@@ -1,3 +1,22 @@
 {
-    "MODULE.hello": "hello"
+    "Armitage.PageType": "Page type",
+    "Armitage.Sections": "Sections",
+    "Armitage.AddSection": "Add Section",
+    "Armitage.EditSection": "Edit Section",
+    "Armitage.DeleteSection": "Delete Section",
+    "Armitage.SectionName": "Section name",
+    "Armitage.SectionColor": "Color",
+    "Armitage.NoSections": "No sections yet.",
+    "Armitage.MatrixEmpty": "Add sections to build your matrix.",
+    "Armitage.ColumnEmpty": "Click + to add entries",
+    "Armitage.AddCollection": "Add Collection",
+    "Armitage.CollectionName": "Collection name",
+    "Armitage.AddJournal": "Add Journal",
+    "Armitage.DeleteEntry": "Delete Entry",
+    "Armitage.EntryJournal": "Journal",
+    "Armitage.BackToMatrix": "← Back to Matrix",
+    "Armitage.ConfirmDelete": "Are you sure you want to delete",
+    "Armitage.Create": "Create",
+    "Armitage.Save": "Save",
+    "Armitage.Add": "Add"
 }

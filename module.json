@@ -1,9 +1,9 @@
 {
   "id": "armitage",
-  "title": "armitage",
-  "description": "",
-  "version": "#{VERSION}#",
-  "library": "false",
+  "title": "Armitage",
+  "description": "Delta Green Journal Manager",
+  "version": "1.0.0",
+  "library": false,
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
     "minimum": 13,
@@ -12,9 +12,8 @@
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Stuffe",
+      "url": "https://github.com/stuffegit"
     }
   ],
   "relationships": {
@@ -22,13 +21,10 @@
     "requires": []
   },
   "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
+    "scripts/armitage.js"
   ],
   "styles": [
-    "styles/module.css"
+    "styles/armitage.css"
   ],
   "languages": [
     {
@@ -37,10 +33,9 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
+  "url": "https://github.com/stuffegit/armitage",
+  "manifest": "https://github.com/stuffegit/armitage/releases/latest/download/module.json",
+  "download": "https://github.com/stuffegit/armitage/releases/latest/download/armitage.zip",
   "readme": "README.md",
   "media": [
     {

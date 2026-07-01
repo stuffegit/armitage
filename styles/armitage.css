@@ -1,0 +1,316 @@
+.armitage-browser {
+    height: 100%;
+    min-width: 600px;
+}
+
+.armitage-browser .armitage-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.armitage-browser .sidebar {
+    width: 220px;
+    overflow-y: auto;
+    border-right: 1px solid #666;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.armitage-browser .reader {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.armitage-browser .reader-pages {
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.armitage-browser .reader-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.armitage-browser .journal-page {
+    cursor: pointer;
+    padding: 4px;
+    margin: 2px 0;
+}
+
+.armitage-browser .journal-page:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.armitage-browser .journal-page.active {
+    background: rgba(255,255,255,0.15);
+    font-weight: bold;
+}
+
+.armitage-browser .page-text {
+    line-height: 1.6;
+}
+
+.armitage-browser .page-text p {
+    margin: 0 0 0.5em 0;
+}
+
+.armitage-browser .back-link {
+    display: inline-block;
+    cursor: pointer;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 8px;
+    transition: color 0.15s;
+}
+
+.armitage-browser .back-link:hover {
+    color: #4a90d9;
+}
+
+.armitage-browser .reader-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+    font-style: italic;
+}
+
+.armitage-browser .empty-message {
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+/* ── Icon buttons ─────────────────────────────────────────────────────── */
+
+.armitage-browser .icon-btn {
+    background: transparent;
+    border: 1px solid #666;
+    color: #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.armitage-browser .icon-btn:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────────────── */
+
+.armitage-browser .sections-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.armitage-browser .sections-header h2 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.armitage-browser .section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.armitage-browser .sidebar-section {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    gap: 6px;
+}
+
+.armitage-browser .sidebar-section:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.armitage-browser .sidebar-section-name {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.armitage-browser .sidebar-section-actions {
+    display: flex;
+    gap: 1px;
+}
+
+.armitage-browser .sidebar-section-actions button {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.armitage-browser .sidebar-section-actions button:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+
+/* ── Column actions ──────────────────────────────────────────────────── */
+
+.armitage-browser .column-actions {
+    display: flex;
+    gap: 4px;
+}
+
+/* ── Matrix columns ───────────────────────────────────────────────────── */
+
+.armitage-browser .matrix-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.armitage-browser .section-column {
+    flex: 1;
+    min-width: 180px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.armitage-browser .column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-bottom: 1px solid #444;
+}
+
+.armitage-browser .column-header h3 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.armitage-browser .column-tree {
+    padding: 4px 0;
+}
+
+.armitage-browser .column-empty {
+    padding: 16px 10px;
+    color: #555;
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ── Entry rows ───────────────────────────────────────────────────────── */
+
+.armitage-browser .entry-row {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 2px;
+    transition: background 0.1s;
+}
+
+.armitage-browser .entry-row:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.armitage-browser .entry-toggle {
+    flex-shrink: 0;
+    width: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #888;
+    font-size: 11px;
+    user-select: none;
+}
+
+.armitage-browser .entry-toggle:hover {
+    color: #ccc;
+}
+
+.armitage-browser .entry-toggle-empty {
+    cursor: default;
+    visibility: hidden;
+}
+
+.armitage-browser .entry-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.armitage-browser .entry-collection {
+    font-weight: 600;
+    color: #eee;
+    font-size: 12px;
+}
+
+.armitage-browser .entry-add-child {
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    padding: 0 4px;
+    font-size: 10px;
+    line-height: 1;
+    opacity: 0.4;
+    transition: opacity 0.15s, color 0.15s;
+}
+
+.armitage-browser .entry-add-child:hover {
+    opacity: 1;
+    color: #4a90d9;
+}
+
+.armitage-browser .entry-journal {
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.15s;
+}
+
+.armitage-browser .entry-journal:hover {
+    color: #4a90d9;
+}
+
+.armitage-browser .entry-delete {
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    padding: 0 3px;
+    font-size: 10px;
+    line-height: 1;
+    opacity: 0;
+    transition: opacity 0.15s, color 0.15s;
+}
+
+.armitage-browser .entry-row:hover .entry-delete {
+    opacity: 1;
+}
+
+.armitage-browser .entry-delete:hover {
+    color: #e55;
+}
